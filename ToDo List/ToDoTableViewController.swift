@@ -7,6 +7,13 @@
 
 import UIKit
 
+private let dateFormatter: DateFormatter = {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .short
+    dateFormatter.timeStyle = .short
+    return dateFormatter
+}()
+
 class ToDoTableViewController: UITableViewController {
 
     @IBOutlet weak var saveBarButton: UIBarButtonItem!
@@ -26,7 +33,7 @@ class ToDoTableViewController: UITableViewController {
         super.viewDidLoad()
         
         if toDoItem == nil {
-            toDoItem = ToDoItem(name: "", date: Date(), notes: "", reminderSet: false)
+            toDoItem = ToDoItem(name: "", date: Date().addingTimeInterval(24*60*60), notes: "", reminderSet: false)
         }
         
         updateUserInterface()
@@ -41,6 +48,7 @@ class ToDoTableViewController: UITableViewController {
         noteView.text = toDoItem.notes
         reminderSwitch.isOn = toDoItem.reminderSet
         dateLabel.textColor = (reminderSwitch.isOn ? .black : .gray)
+        dateLabel.text = dateFormatter.string(from: toDoItem.date)
         
     }
     
@@ -58,6 +66,13 @@ class ToDoTableViewController: UITableViewController {
         }
         
     }
+    
+    
+    @IBAction func datePickerChanged(_ sender: UIDatePicker) {
+        dateLabel.text = dateFormatter.string(from: sender.date)
+    }
+    
+    
     
     @IBAction func reminderSwitchChanged(_ sender: UISwitch) {
         
