@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714326BC252BA28800D880CF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714326BB252BA28800D880CF /* ListTableViewCell.swift */; };
 		719130E325219C2800370F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719130E225219C2800370F88 /* AppDelegate.swift */; };
 		719130E525219C2800370F88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719130E425219C2800370F88 /* SceneDelegate.swift */; };
 		719130E725219C2800370F88 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719130E625219C2800370F88 /* ToDoListViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		714326BB252BA28800D880CF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		719130DF25219C2800370F88 /* ToDo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		719130E225219C2800370F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719130E425219C2800370F88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				719130E625219C2800370F88 /* ToDoListViewController.swift */,
 				71913118252202BF00370F88 /* ToDoTableViewController.swift */,
 				719130E825219C2800370F88 /* Main.storyboard */,
+				714326BB252BA28800D880CF /* ListTableViewCell.swift */,
 				719130EB25219C2A00370F88 /* Assets.xcassets */,
 				719130ED25219C2A00370F88 /* LaunchScreen.storyboard */,
 				719130F025219C2A00370F88 /* Info.plist */,
@@ -269,6 +272,7 @@
 				719131212522292B00370F88 /* ToDoItem.swift in Sources */,
 				719130E325219C2800370F88 /* AppDelegate.swift in Sources */,
 				719130E525219C2800370F88 /* SceneDelegate.swift in Sources */,
+				714326BC252BA28800D880CF /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
