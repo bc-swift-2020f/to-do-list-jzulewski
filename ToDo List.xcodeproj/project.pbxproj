@@ -18,6 +18,7 @@
 		7191310525219C2A00370F88 /* ToDo_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191310425219C2A00370F88 /* ToDo_ListUITests.swift */; };
 		71913119252202BF00370F88 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71913118252202BF00370F88 /* ToDoTableViewController.swift */; };
 		719131212522292B00370F88 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719131202522292B00370F88 /* ToDoItem.swift */; };
+		71DAC855253545FB000ECABE /* ToDoItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DAC854253545FB000ECABE /* ToDoItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7191310625219C2A00370F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71913118252202BF00370F88 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		719131202522292B00370F88 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		71DAC854253545FB000ECABE /* ToDoItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				719130E225219C2800370F88 /* AppDelegate.swift */,
 				719130E425219C2800370F88 /* SceneDelegate.swift */,
 				719131202522292B00370F88 /* ToDoItem.swift */,
+				71DAC854253545FB000ECABE /* ToDoItems.swift */,
 				719130E625219C2800370F88 /* ToDoListViewController.swift */,
 				71913118252202BF00370F88 /* ToDoTableViewController.swift */,
 				719130E825219C2800370F88 /* Main.storyboard */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				719130E725219C2800370F88 /* ToDoListViewController.swift in Sources */,
+				71DAC855253545FB000ECABE /* ToDoItems.swift in Sources */,
 				71913119252202BF00370F88 /* ToDoTableViewController.swift in Sources */,
 				719131212522292B00370F88 /* ToDoItem.swift in Sources */,
 				719130E325219C2800370F88 /* AppDelegate.swift in Sources */,
