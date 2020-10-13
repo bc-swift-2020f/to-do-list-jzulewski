@@ -27,17 +27,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-po-VE0">
-                                                    <rect key="frame" x="70" y="11" width="234" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This will be a To Do item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-po-VE0">
+                                                    <rect key="frame" x="70" y="0.0" width="250" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gv-f4-HDL">
-                                                    <rect key="frame" x="16" y="10" width="24" height="22"/>
+                                                    <rect key="frame" x="14" y="10" width="34" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="rectangle" catalog="system"/>
+                                                    <state key="normal" image="rectangle" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
+                                                    </state>
                                                     <state key="selected" image="checkmark.rectangle" catalog="system"/>
                                                     <connections>
                                                         <action selector="checkToggled:" destination="rrc-49-DGV" eventType="touchUpInside" id="QZ6-IQ-wQl"/>
@@ -67,7 +69,7 @@
                             <constraint firstItem="IRR-zd-mze" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vW1-Rc-Qy6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J0L-0k-5mx">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="J0L-0k-5mx">
                         <barButtonItem key="leftBarButtonItem" title="Edit" id="17Y-Of-Nj2">
                             <connections>
                                 <action selector="editButtonPressed:" destination="BYZ-38-t0r" id="gFQ-iC-68J"/>
@@ -109,10 +111,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="re2-9B-9al">
-                                                    <rect key="frame" x="20" y="5" width="277" height="34"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="This will be a To Do item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="re2-9B-9al">
+                                                    <rect key="frame" x="20" y="5" width="284" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="textFieldEditingChanged:" destination="Scq-Ym-cfc" eventType="editingChanged" id="LaV-WB-J0F"/>
@@ -183,7 +185,7 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <color key="textColor" systemColor="labelColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -197,7 +199,7 @@
                             <outlet property="delegate" destination="Scq-Ym-cfc" id="7Wg-zh-J4A"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Hhq-3Y-5iz">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Hhq-3Y-5iz">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4o3-bX-c5b">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="Scq-Ym-cfc" id="XhR-vA-kwL"/>
@@ -246,7 +248,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ctW-Ul-7S3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="SLL-YQ-XuN"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="SLL-YQ-XuN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NMp-Fj-A8T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
