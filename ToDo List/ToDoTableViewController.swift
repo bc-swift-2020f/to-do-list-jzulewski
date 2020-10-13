@@ -15,7 +15,7 @@ private let dateFormatter: DateFormatter = {
 }()
 
 class ToDoTableViewController: UITableViewController {
-
+    
     @IBOutlet weak var saveBarButton: UIBarButtonItem!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -61,6 +61,21 @@ class ToDoTableViewController: UITableViewController {
         
     }
     
+    func updateReminderSwitch() {
+        LocalNotificationManager.isAuthorized { (authorized) in
+            DispatchQueue.main.async {
+                if !authorized && self.reminderSwitch.isOn {
+                    self.oneButtonAlert(title: "User Has Not Allowed Notifcations", message: "To receive alerts for reminders, open the Settings app, select To Do List > Notifications > Allow Notifications.")
+                    self.reminderSwitch.isOn = false
+                }
+                
+                self.view.endEditing(true)
+                self.dateLabel.textColor = (self.reminderSwitch.isOn ? .black : .gray)
+                self.tableView.beginUpdates()
+                self.tableView.endUpdates()
+            }
+        }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         toDoItem = ToDoItem(name: nameField.text!, date: datePicker.date, notes: noteView.text, reminderSet: reminderSwitch.isOn, completed: toDoItem.completed)
@@ -73,7 +88,7 @@ class ToDoTableViewController: UITableViewController {
             saveBarButton.isEnabled = false
         }
     }
-
+    
     @IBAction func cancelButtonPressed(_ sender: Any) {
         let isPresentingInAddMode = presentingViewController is UINavigationController
         if isPresentingInAddMode {
@@ -96,10 +111,7 @@ class ToDoTableViewController: UITableViewController {
     }
     
     @IBAction func reminderSwitchChanged(_ sender: UISwitch) {
-        self.view.endEditing(true)
-        dateLabel.textColor = (reminderSwitch.isOn ? .black : .gray)
-        tableView.beginUpdates()
-        tableView.endUpdates()
+        updateReminderSwitch()
         
     }
     
