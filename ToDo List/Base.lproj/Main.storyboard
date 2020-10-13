@@ -40,7 +40,7 @@
                                                     <state key="normal" image="rectangle" catalog="system"/>
                                                     <state key="selected" image="checkmark.rectangle" catalog="system"/>
                                                     <connections>
-                                                        <action selector="checkToggled:" destination="rrc-49-DGV" eventType="touchUpInside" id="cpk-ga-MEM"/>
+                                                        <action selector="checkToggled:" destination="rrc-49-DGV" eventType="touchUpInside" id="QZ6-IQ-wQl"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -53,6 +53,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="checkToggled" destination="0gv-f4-HDL" id="5vR-xe-aeD"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
